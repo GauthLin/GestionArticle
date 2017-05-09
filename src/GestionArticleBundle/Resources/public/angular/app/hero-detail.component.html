@@ -1,0 +1,21 @@
+<div *ngIf="hero">
+    <h2>Détails de {{hero.firstname}} <span class="lastname">{{hero.lastname}}</span></h2>
+    <div>
+        <label>id: </label>
+        <input type="text" disabled value="{{hero.id}}">
+
+    </div>
+    <div>
+        <label>Prénom: </label>
+        <input type="text" [(ngModel)]="hero.firstname" placeholder="Prénom" />
+    </div>
+    <div>
+        <label>Nom: </label>
+        <input type="text" [(ngModel)]="hero.lastname" placeholder="Nom" />
+    </div>
+    <div>
+        <label>Adresse mail: </label>
+        <input type="email" [(ngModel)]="hero.email" placeholder="Adresse mail" />
+    </div>
+    <label></label><button (click)="goBack()" class="default">Annuler</button> <button (click)="save()" class="success">Sauver</button>
+</div>

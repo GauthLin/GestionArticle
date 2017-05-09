@@ -1,0 +1,44 @@
+label {
+    display: inline-block;
+    width: 150px;
+    margin: .5em 0;
+    color: #607D8B;
+    font-weight: bold;
+    text-align: right;
+}
+input {
+    height: 2em;
+    font-size: 1em;
+    padding-left: .4em;
+}
+button {
+    font-size: 1em;
+    margin-top: 20px;
+    font-family: Arial, serif;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button.success {
+    background-color: darkgreen;
+    color: whitesmoke;
+}
+button.default {
+    background-color: #eee;
+    color: black;
+}
+button:hover {
+    opacity: .8;
+}
+button:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: not-allowed;
+}
+input:disabled {
+    cursor: not-allowed;
+}
+.lastname {
+    text-transform: uppercase;
+}

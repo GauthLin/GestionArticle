@@ -1,0 +1,13 @@
+<h2>Liste des auteurs</h2>
+<div class="grid grid-pad">
+    <div *ngIf="heroes.length == 0">
+        Il n'y a encore aucun auteur inscrit !
+    </div>
+    <a *ngFor="let hero of heroes" class="col-1-4">
+        <div class="module hero" [routerLink]="['/detail', hero.id]">
+            <div class="firstname">{{hero.firstname}}</div>
+            <div class="lastname">{{hero.lastname}}</div>
+        </div>
+        <div class="delete" (click)="deleteHero(hero)">Supprimer</div>
+    </a>
+</div>

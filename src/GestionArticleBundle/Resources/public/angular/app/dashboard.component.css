@@ -1,0 +1,83 @@
+[class*='col-'] {
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+[class*='col-']:last-of-type {
+    padding-right: 0;
+}
+a {
+    text-decoration: none;
+}
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+h3 {
+    text-align: center; margin-bottom: 0;
+}
+h4 {
+    position: relative;
+}
+.grid {
+    margin: 0;
+}
+.col-1-4 {
+    width: 25%;
+}
+.delete {
+    padding: 5px 0;
+    background-color: grey;
+    color: whitesmoke;
+    cursor: pointer;
+    text-align: center;
+}
+.delete:hover {
+    background-color: #a80000;
+    -webkit-box-shadow: 0 0 15px red;
+    -moz-box-shadow: 0 0 15px red;
+    box-shadow: 0 0 15px red;
+}
+.module {
+    padding: 20px;
+    text-align: center;
+    color: whitesmoke;
+    max-height: 120px;
+    min-width: 120px;
+    background-color: #da6500;
+}
+.module:hover {
+    background-color: #f66800;
+    -webkit-box-shadow: 0 0 15px black;
+    -moz-box-shadow: 0 0 15px black;
+    box-shadow: 0 0 15px black;
+    cursor: pointer;
+}
+.firstname {
+    color: whitesmoke;
+    font-size: 1.4em;
+}
+.lastname {
+    color: lightgrey;
+    font-size: 1.1em;
+}
+.grid-pad {
+    padding: 10px 0;
+}
+.grid-pad > [class*='col-']:last-of-type {
+    padding-right: 20px;
+}
+@media (max-width: 600px) {
+    .module {
+        font-size: 10px;
+        max-height: 75px; }
+}
+@media (max-width: 1024px) {
+    .grid {
+        margin: 0;
+    }
+    .module {
+        min-width: 60px;
+    }
+}

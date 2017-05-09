@@ -1,0 +1,14 @@
+<h2>Ajout d'un auteur</h2>
+<div>
+    <label for="prenom">Prénom: </label>
+    <input [(ngModel)]="firstname" placeholder="Prénom" id="prenom"/>
+</div>
+<div>
+    <label for="nom">Nom: </label>
+    <input [(ngModel)]="lastname" placeholder="Nom" id="nom"/>
+</div>
+<div>
+    <label for="email">Adresse mail: </label>
+    <input [(ngModel)]="email" placeholder="Adresse mail" id="email"/>
+</div>
+<label></label><button (click)="goBack()" class="default">Annuler</button> <button (click)="addHero(firstname, lastname, email)" class="success">Ajout l'auteur</button>

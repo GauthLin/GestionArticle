@@ -1,0 +1,4 @@
+gestion_article:
+    resource: "@GestionArticleBundle/Controller/"
+    type:     annotation
+    prefix:   /
